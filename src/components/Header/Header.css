@@ -1,0 +1,54 @@
+header{
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    align-content: stretch;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 2px var(--primary-color) solid;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.logotipo{
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    grid-column: 7 / 13;
+}
+
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFF;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 40px;
+    transition: ease-in-out 200ms all;
+    box-sizing: content-box;
+}
+
+nav a:hover{
+    background-color: var(--primary-color);
+}
+
+.active{
+    border-bottom: 4px var(--primary-color) solid;
+}
