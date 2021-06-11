@@ -1,0 +1,42 @@
+.about {
+	width: 100%;
+	position: relative;
+	top: -1.9rem;
+}
+
+.about ul{
+   list-style: none;
+   position: relative;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem;
+   justify-content: center;
+}
+
+.about li{
+    background-color: #fff;
+    width: 100%;
+    height: 15rem;
+    border-bottom: .4rem solid var(--primary-color);
+    box-shadow: 0px 0px 10px #ccc;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.about h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--black-color);
+}
+
+.about img{
+    margin-bottom: 2rem;
+}
+
+.about article{
+    margin: 10rem 0;
+    width: 100%;
+    border-left: 1rem solid var(--primary-color);
+    padding: 1rem 15rem;
+}

@@ -3,12 +3,12 @@ header{
     height: 95px;
     position: fixed;
     align-content: stretch;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /* display: grid; */
+    /* grid-template-columns: repeat(12, 1fr); */
     border-bottom: 2px var(--primary-color) solid;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    padding: 0 4.5rem;
+    /* padding: 0 4.5rem; */
 }
 
 .logotipo{

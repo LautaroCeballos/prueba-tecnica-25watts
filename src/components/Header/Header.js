@@ -3,7 +3,7 @@ import "./Header.css"
 import Logo from '../../assets/logo.svg'
 
 export default function Header(){
-    return <header>
+    return <header className="grid">
         <a className="logotipo" href="./home"><img src={Logo} alt="25watts Logotipo"/></a>
         <nav>
             <ul>
