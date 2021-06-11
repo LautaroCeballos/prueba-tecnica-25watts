@@ -5,6 +5,7 @@
 
 .slider-home li {
 	background-image: url("/src/assets/slider-img/slide1.png");
+    background-color: var(--bg-color-default);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
