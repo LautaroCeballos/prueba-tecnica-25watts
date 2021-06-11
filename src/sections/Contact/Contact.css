@@ -1,0 +1,48 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact img{
+    grid-column: 7 / 13;
+    width: 100%;
+}
+
+.form-contact{
+    grid-column: 1 / 6;
+}
+
+.form-contact input:not([type="submit"]),
+.form-contact textarea{
+    width: 100% !important;
+    background-color: rgba(0,0,0,0);
+    color: #5F6368;
+    border-style: none;
+    border-bottom: 1px solid #cecdcd;
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--font-regular);
+    font-size: .9rem;
+    padding: 1rem 0;
+    outline: none;
+    resize: none;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+
+.form-contact input:not([type="submit"])::placeholder,
+.form-contact textarea::placeholder{
+    opacity: 1;
+}
+
+.form-contact input:not([type="submit"]):focus,
+.form-contact textarea:focus,
+.form-contact input:not([type="submit"]):focus::placeholder,
+.form-contact textarea:focus::placeholder{
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.form-contact input[type="submit"]{
+    margin-top: 1.5rem;
+    padding: .7rem 3rem;
+}
