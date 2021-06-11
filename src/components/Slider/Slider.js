@@ -1,14 +1,14 @@
 import React from 'react'
+import './Slider.css'
 
 export default function Slider(){
     return <>
-        <ul>
+        <ul className="slider">
             <li>
-                <img src={slider1} />
                 <h1>Sed ut perspiciatis unde omnis iste natus</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
 
-                <button>Read more</button>
+                <button className="btn">Read more</button>
             </li>
         </ul>
     

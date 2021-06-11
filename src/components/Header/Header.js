@@ -10,6 +10,7 @@ export default function Header(){
                 <li><a className="active" href="./home">Home</a></li>
                 <li><a href="./home">About</a></li>
                 <li><a href="./home">Product</a></li>
+                <li><a href="./home">Services</a></li>
                 <li><a href="./home">Contact</a></li>
             </ul>
         </nav>

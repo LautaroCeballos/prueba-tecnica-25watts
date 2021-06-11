@@ -1,0 +1,36 @@
+.slider{
+    height: 100%;
+    width: 100%;
+}
+
+.slider li {
+	background-image: url("/src/assets/slider-img/slide1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+    justify-items: left;
+    align-content: center;
+}
+
+.slider h1,
+.slider p,
+.slider button{
+    grid-column: 1 / 7;
+    margin: 1rem 4.5rem;
+    color: #fff;
+}
+
+.slider h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.slider p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
