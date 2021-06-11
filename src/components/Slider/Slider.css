@@ -1,9 +1,9 @@
-.slider{
+.slider-home{
     height: 100%;
     width: 100%;
 }
 
-.slider li {
+.slider-home li {
 	background-image: url("/src/assets/slider-img/slide1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -12,23 +12,23 @@
     align-content: center;
 }
 
-.slider h1,
-.slider p,
-.slider button{
+.slider-home h1,
+.slider-home p,
+.slider-home button{
     grid-column: 1 / 7;
     color: #fff;
     margin-top: 2.5rem;
 }
 
-.slider h1{
+.slider-home h1{
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: var(--font-semibold);
     font-size: 2.5rem;
     line-height: 3rem;
 }
 
-.slider p{
+.slider-home p{
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: var(--font-regular);
     font-size: 1rem;
 }
