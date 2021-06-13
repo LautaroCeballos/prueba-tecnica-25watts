@@ -1,5 +1,6 @@
 import React from 'react'
-import BannerAnim, { Element, Arrow, Thumb } from 'rc-banner-anim'
+import { Link } from 'react-scroll'
+import BannerAnim, { Element, Arrow } from 'rc-banner-anim'
 import TweenOne from 'rc-tween-one'
 
 import './Slider.css'
@@ -28,7 +29,7 @@ export default function Slider() {
     const BgElement = Element.BgElement;
 
     return <>
-        <BannerAnim prefixCls="slider-home" type="grid" arrow="false" thumb="false">
+        <BannerAnim prefixCls="slider-home" type="grid" arrow="false" thumb="false" autoPlay>
             {
                 slides.map( (slide, index) => {
                     return <Element
@@ -48,7 +49,16 @@ export default function Slider() {
                                 </TweenOne>
                                 <TweenOne animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}>
                                     <p>{slide.subtitle}</p>
-                                    <button href="/home" className="btn">Read more</button>
+                                    <Link
+                                        to="about"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-200}
+                                        duration={500}
+                                        className="btn"
+                                    >
+                                        Read more
+                                    </Link>
                                 </TweenOne>
                             </div>
                         </div>

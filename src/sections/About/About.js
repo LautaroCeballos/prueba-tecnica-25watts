@@ -27,7 +27,7 @@ export default function About(){
             })            
         }</ul>
 
-        <article>
+        <article id="about">
             <h2 className="title">
                 We Help Businesses <br/> 
                 <span className="orange-text">

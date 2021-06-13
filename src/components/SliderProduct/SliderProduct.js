@@ -32,7 +32,7 @@ export default function SliderProducts({items}) {
                 })
             }
             
-            <ul class="m-slides">
+            <ul className="m-slides">
                 {
                     slides.map((slide, index) => {
                         return (

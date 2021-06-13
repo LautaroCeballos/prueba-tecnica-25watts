@@ -17,7 +17,7 @@ export default function Service(){
     ]
 
     return (
-        <section className="services grid">
+        <section id="services" className="services grid">
             <Accordion 
                 servData={services} 
             />

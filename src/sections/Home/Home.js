@@ -1,10 +1,10 @@
 import React from 'react'
 import './Home.css'
-import Slider from '../../components/Slider/Slider'
+import Slider from 'components/Slider/Slider'
 
 export default function Home(){
     return <>
-        <section className="Home">
+        <section id="home" className="Home">
             <Slider />
         </section>
     </>

@@ -33,7 +33,11 @@
    font-size: 1rem;
  }
 
-/* Estilos auxiliares a de arrows, thumb y elementos del banner */
+ .slider-home a{
+	 margin-top: 1rem;
+ }
+
+/* Estilos auxiliares a de arrows y elementos del banner */
 .banner-anim-thumb span {
 	width: 8px;
 	height: 8px;

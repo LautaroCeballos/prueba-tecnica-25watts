@@ -4,7 +4,7 @@ import image from 'assets/backgrounds/contact-background.png'
 
 export default function Contact(){
     return (
-        <section className="contact set-bg-image grid">
+        <section id="contact" className="contact set-bg-image grid">
             <article className="form-contact">
                 <h2 className="title">Get in touch <br/> <span className="orange-text">We are hiring!</span></h2>
                 <form>
