@@ -4,9 +4,14 @@ import "./Header.css"
 import Logo from 'assets/logo.svg'
 
 export default function Header(){
-    const [ inHome, setInHome ] = useState(true)
+    const [ inHome, setInHome ] = useState(false)
+    const [ isBurgerOpen, setIsBurgerOpen ] = useState(false)
 
-    return <header className={`grid ${ !inHome ? 'bg-orange' : null}`}>
+    const toggleMenu = () => {
+        setIsBurgerOpen(!isBurgerOpen)
+    }
+
+    return <header className={`grid ${ !inHome && 'bg-orange'}`}>
         <Link 
             className="logotipo"
             activeClass="none" 
@@ -20,7 +25,8 @@ export default function Header(){
         >
             <img src={Logo} alt="25watts Logotipo"/>
         </Link>
-        <nav>
+
+        <nav className={ isBurgerOpen && "nav-open" }>
             <ul>
                 <li>
                     <Link 
@@ -84,5 +90,9 @@ export default function Header(){
                 </li>
             </ul>
         </nav>
+
+        <div class={`menu-toggle ${ isBurgerOpen && "burger-animation"}`} onClick={ toggleMenu }>
+            <div class="burger"></div>
+        </div>
     </header>
 }
