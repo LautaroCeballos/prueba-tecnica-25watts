@@ -15,7 +15,7 @@
    align-content: center;
  }
 
- .slider-home h1, .slider-home p, .slider-home button {
+ .slider-home h1, .slider-home p, .slider-home a {
    color: #fff;
    margin-top: 2.5rem;
  }
@@ -25,17 +25,16 @@
    font-weight: var(--font-semibold);
    font-size: 2.5rem;
    line-height: 3rem;
+   text-shadow: 0 1px 3px rgb(48, 48, 48);
  }
 
  .slider-home p {
    font-family: 'Roboto', sans-serif;
    font-weight: var(--font-regular);
    font-size: 1rem;
+   text-shadow: 0 1px 3px rgb(48, 48, 48);
  }
 
- .slider-home a{
-	 margin-top: 1.5rem;
- }
 
 /* Estilos auxiliares a de arrows y elementos del banner */
 .banner-anim-thumb span {
@@ -72,6 +71,7 @@
    background-color: var(--bg-color-default);
    background-size: cover;
    background-repeat: no-repeat;
+   background-position: center;
  }
  
 .banner-anim-arrow{
@@ -138,3 +138,29 @@
 	left: 10px;
 }
 
+
+@media(max-width: 880px){
+	.slider-content {
+		grid-column: 1 / 9;
+	}
+
+	.slider-home h1, .slider-home p, .slider-home a {
+		margin-top: 1.5rem;
+	}
+	
+	.slider-home h1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	}	
+}
+
+@media(max-width: 620px){
+	.slider-content {
+		grid-column: 1 / 13;
+		text-align: center;
+	}
+
+	.slider-home a{
+		margin-top: 2.5rem;
+	}
+}

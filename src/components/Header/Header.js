@@ -11,7 +11,7 @@ export default function Header(){
         setIsBurgerOpen(!isBurgerOpen)
     }
 
-    return <header className={`grid ${ !inHome && 'bg-orange'}`}>
+    return <header className={`grid ${ !inHome ? 'bg-orange' : ""}`}>
         <Link 
             className="logotipo"
             activeClass="none" 
@@ -26,7 +26,7 @@ export default function Header(){
             <img src={Logo} alt="25watts Logotipo"/>
         </Link>
 
-        <nav className={ isBurgerOpen && "nav-open" }>
+        <nav className={ isBurgerOpen ? "nav-open" : "" }>
             <ul>
                 <li>
                     <Link 
@@ -91,8 +91,8 @@ export default function Header(){
             </ul>
         </nav>
 
-        <div class={`menu-toggle ${ isBurgerOpen && "burger-animation"}`} onClick={ toggleMenu }>
-            <div class="burger"></div>
+        <div className={`menu-toggle ${ isBurgerOpen ? "burger-animation" : ""}`} onClick={ toggleMenu }>
+            <div className="burger"></div>
         </div>
     </header>
 }

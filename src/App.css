@@ -11,6 +11,10 @@
     --bg-color-default: #DCE1DA;
 }
 
+html{
+    font-size: 16px;
+}
+
 p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -68,5 +72,15 @@ p{
 
 .btn:hover{
     transform: scale(1.05);
+}
+
+@media(max-width: 620px){
+    .grid{
+        padding: 0 3rem;
+    }
+
+    .title{
+        font-size: 1.9rem;
+    }
 }
 

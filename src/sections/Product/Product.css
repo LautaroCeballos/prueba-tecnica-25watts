@@ -2,10 +2,17 @@
     background-image: url('../../assets/backgrounds/prod-backgound.png');
     background-color: var(--bg-color-default);
     background-size: cover;
-    grid-column: 3/11;
+    background-position: center;
+    grid-column: 2/12;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     height: 80%;
+}
+
+@media(max-width: 880px){
+    .background{
+        grid-column: 1 / 13;
+    }
 }
 

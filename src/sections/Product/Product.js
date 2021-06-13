@@ -9,11 +9,11 @@ export default function Product(){
             subtitle: 'Sed ut perspiciatis',
             description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
         },{
-            title: 'Perspiciatis Unde',
+            title: 'Perspiciatis',
             subtitle: 'Natus error sit voluptatem',
             description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
         },{
-            title: 'Dolore Laudan',
+            title: 'Dolore La',
             subtitle: 'Omnis iste natus error sit',
             description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
         }

@@ -1,35 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import BannerAnim, { Element, Arrow } from 'rc-banner-anim'
 import TweenOne from 'rc-tween-one'
 
 import './Slider.css'
 
-import slideImg1 from 'assets/slider-img/slide1.png'
-import slideImg2 from 'assets/slider-img/slide2.png'
-import slideImg3 from 'assets/slider-img/slide3.png'
-
-export default function Slider() {
-    const slides = [
-        {
-            title: 'Sed ut perspiciatis unde omnis iste natus',
-            subtitle: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.',
-            img: slideImg1,
-        },{
-            title: 'Sed ut perspiciatis unde omnis iste natus',
-            subtitle: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.',
-            img: slideImg2
-        },{
-            title: 'Sed ut perspiciatis unde omnis iste natus',
-            subtitle: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.',
-            img: slideImg3
-        }
-    ]
+export default function Slider({items}) {
+    const [slides, setSlides] = useState(items)
 
     const BgElement = Element.BgElement;
 
     return <>
-        <BannerAnim prefixCls="slider-home" type="grid" arrow="false" thumb="false" autoPlay>
+        <BannerAnim prefixCls="slider-home" type="grid" arrow={false} thumb={false} autoPlay>
             {
                 slides.map( (slide, index) => {
                     return <Element key={index}>
