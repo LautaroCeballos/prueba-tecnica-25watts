@@ -32,8 +32,6 @@ export const useForm = (initialForm, validateForm) => {
     return{
         form,
         errors,
-        loading,
-        response,
         handleChange,
         handleBlur,
         handleSubmit

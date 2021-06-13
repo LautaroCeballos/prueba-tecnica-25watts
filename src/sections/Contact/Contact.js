@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css'
 import image from 'assets/backgrounds/contact-background.png'
 import { useForm } from 'hooks/useForm';
@@ -21,21 +21,15 @@ const validationsForm = (form) => {
         errors.name = 'Name required'
     } else if(!regexName.test(form.name.trim())){
         errors.name = 'Invalid name'
-    }
-
-    if(!form.email.trim()){
+    } else if(!form.email.trim()){
         errors.email = 'Email required'
     } else if(!regexEmail.test(form.email.trim())){
         errors.email = 'Invalid email'
-    }
-
-    if(!form.phone.trim()){
+    } else if(!form.phone.trim()){
         errors.phone = 'Phone required'
     } else if(!regexPhone.test(form.phone.trim())){
         errors.phone = 'Invalid phone'
-    }
-
-    if(!form.message.trim()){
+    } else if(!form.message.trim()){
         errors.message = 'Message required'
     } else if(!regexMessage.test(form.message.trim())){
         errors.message = 'Invalid message'
@@ -61,42 +55,42 @@ export default function Contact(){
                     <input 
                         name="name" 
                         type="text" 
-                        placeholder="Name" 
+                        placeholder={errors.name ? errors.name : "Name"} 
                         onBlur={handleBlur} 
+                        className={ errors.name && 'invalid-input'}
                         onChange={handleChange} 
                         value={form.name} 
                         required
                     />
-                    { errors.name && <p>{errors.name}</p>}
                     <input 
                         name="email" 
                         type="email" 
-                        placeholder="Email" 
+                        placeholder={errors.email ? errors.email : "Email"} 
                         onBlur={handleBlur} 
+                        className={ errors.email && 'invalid-input'}
                         onChange={handleChange} 
                         value={form.email} 
                         required
                     />
-                    { errors.email && <p>{errors.email}</p>}
                     <input 
                         name="phone" 
                         type="tel" 
-                        placeholder="Phone" 
+                        placeholder={errors.phone ? errors.phone : "Phone"} 
                         onBlur={handleBlur} 
+                        className={ errors.phone && 'invalid-input'}
                         onChange={handleChange} 
                         value={form.phone} 
                         required
                     />
-                    { errors.phone && <p>{errors.phone}</p>}
                     <textarea 
                         name="message" 
-                        placeholder="Message" 
+                        placeholder={errors.message ? errors.message : "Message"} 
                         onBlur={handleBlur} 
+                        className={ errors.message && 'invalid-input'}
                         onChange={handleChange} 
                         value={form.message} 
                         required
                     />
-                    { errors.message && <p>{errors.message}</p>}
                     <input 
                         type="submit" 
                         value="Send" 

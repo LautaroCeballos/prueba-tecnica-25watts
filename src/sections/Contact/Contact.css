@@ -46,3 +46,9 @@
     margin-top: 1.5rem;
     padding: .7rem 3rem;
 }
+
+.invalid-input,
+.invalid-input::placeholder{
+    color: #ee2323 !important;
+    border-bottom: 1px solid #ee2323 !important;
+}
