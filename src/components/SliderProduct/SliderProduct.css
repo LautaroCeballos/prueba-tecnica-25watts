@@ -1,11 +1,11 @@
 .slider-prod{
     background-color: var(--primary-color);
     width: 50%;
+    min-width: 20rem;
     height: 55%;
     padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
-    /* align-content: flex-end; */
     position: relative;
     overflow: hidden;
 }
@@ -84,4 +84,17 @@
 
 .arrow img{
     width: 100%;
+}
+
+@media(max-width: 880px){
+    .slider-prod h2{
+        font-size: 2rem;
+        margin-bottom: .8rem;
+    }
+}
+
+@media(max-width: 450px){
+    .slider-prod{
+        min-width: 100%;
+    }
 }
