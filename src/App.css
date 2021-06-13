@@ -38,6 +38,8 @@ p{
 .set-bg-image{
     background-image: url('assets/backgrounds/background.svg');
     background-color: var(--bg-color-default);
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100%;
     padding: 0 6rem;
