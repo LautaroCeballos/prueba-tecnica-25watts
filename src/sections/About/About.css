@@ -20,8 +20,15 @@
     border-bottom: .4rem solid var(--primary-color);
     box-shadow: 0px 0px 10px #ccc;
     display: grid;
+    grid-template-rows: repeat(2, 1fr);
     align-content: center;
     justify-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.about img{
+    align-self: flex-end;
 }
 
 .about h4{
@@ -29,15 +36,35 @@
     font-weight: var(--font-medium);
     font-size: 1rem;
     color: var(--black-color);
-}
-
-.about img{
-    margin-bottom: 2rem;
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 1rem;
 }
 
 .about article{
     margin: 10rem 0;
     width: 100%;
     border-left: 1rem solid var(--primary-color);
-    padding: 1rem 15rem;
+    padding: 1rem 25%;
+}
+
+@media(max-width: 880px){
+    .about ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about article{
+        padding: 1rem 15%;
+    }
+}
+
+@media(max-width: 450px){
+    .about ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about article{
+        border-left: .5rem solid var(--primary-color);
+        padding: 1rem 2rem;
+    }
 }
