@@ -52,3 +52,14 @@
     color: #ee2323 !important;
     border-bottom: 1px solid #ee2323 !important;
 }
+
+
+@media(max-width: 880px){
+    .contact img{
+        display: none;
+    }
+    
+    .form-contact{
+        grid-column: 1 / 13;
+    }
+}
