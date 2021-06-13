@@ -32,9 +32,7 @@ export default function Slider() {
         <BannerAnim prefixCls="slider-home" type="grid" arrow="false" thumb="false" autoPlay>
             {
                 slides.map( (slide, index) => {
-                    return <Element
-                        key={index}
-                    >
+                    return <Element key={index}>
                         <BgElement
                             key={`bg${index}`}
                             className="bg"
